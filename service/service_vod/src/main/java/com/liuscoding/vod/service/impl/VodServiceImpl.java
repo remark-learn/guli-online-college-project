@@ -1,8 +1,8 @@
 package com.liuscoding.vod.service.impl;
 
-import com.aliyun.vod.upload.impl.UploadVideoImpl;
-import com.aliyun.vod.upload.req.UploadStreamRequest;
-import com.aliyun.vod.upload.resp.UploadStreamResponse;
+// import com.aliyun.vod.upload.impl.UploadVideoImpl;
+// import com.aliyun.vod.upload.req.UploadStreamRequest;
+// import com.aliyun.vod.upload.resp.UploadStreamResponse;
 import com.aliyuncs.DefaultAcsClient;
 import com.aliyuncs.vod.model.v20170321.DeleteVideoRequest;
 import com.liuscoding.commonutils.result.ResultCode;
@@ -45,13 +45,13 @@ public class VodServiceImpl implements VodService {
         //获取文件的输入流
 
         InputStream inputStream = file.getInputStream();
-        UploadStreamRequest request = new UploadStreamRequest(VodConstants.ACCESS_KEY_ID, VodConstants.ACCESS_KEY_SECRET, title, originalFilename, inputStream);
-        UploadVideoImpl uploadVideo = new UploadVideoImpl();
-        UploadStreamResponse response = uploadVideo.uploadStream(request);
-        videoId = response.getVideoId();
+        // UploadStreamRequest request = new UploadStreamRequest(VodConstants.ACCESS_KEY_ID, VodConstants.ACCESS_KEY_SECRET, title, originalFilename, inputStream);
+        // UploadVideoImpl uploadVideo = new UploadVideoImpl();
+        // UploadStreamResponse response = uploadVideo.uploadStream(request);
+        // videoId = response.getVideoId();
+        // return videoId;
 
-
-        return videoId;
+        return "1";
     }
 
     /**
